@@ -1,8 +1,8 @@
 import { Router } from "../Dependencies/dependencias.ts";
-import { getLogin } from "../Controller/loginController.ts";
+import { postLogin } from "../Controller/loginController.ts";
 
 const LoginRouter = new Router();
 
-LoginRouter.get("/rol",getLogin);
+LoginRouter.post("/login",postLogin);
 
 export {LoginRouter};
